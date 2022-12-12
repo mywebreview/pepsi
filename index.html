@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <title>PEPSI | Landing page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contain">
+        <section class="nav">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="navbars">
+                <ul>
+               <li><a href="#">PRODUCTS</a></li>
+               <li><a href="#">WHAT'S NEW</a></li>
+               <li><a href="#">NEWSLETTER</a></li>
+               <li><a href="#">ABOUT US</a></li>
+               <li><a href="#">CONTACT US</a></li>
+               <button>BUY PRODUCT</button>
+            </ul>
+            </div>  
+            <div class="nav-btn">        
+                <a class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="hero-social">
+                <img src="img/socials.png" alt="">
+            </div>
+            <div class="hero-lft">
+                <div class="hero-text">
+                    <h1>Pepsi Classic</h1>
+                    <p>Carbonated Water, High Fructose, Corn Syrup, Caramel Color, Sugar,<br>
+                        Phosphoric Acid, Caffeine, Citric Acid, Natural Flavour</p>
+                    </div>
+            <div class="hero-tags">
+                <h3>NUTRITIONAL FACTS</h3>
+                <div class="tags-img">
+                    <img src="img/tag1.png" alt="tag">
+                    <img src="img/tag3.png" alt="tag">
+                    <img src="img/tag2.png" alt="tag">
+                    <img src="img/tag4.png" alt="tag">
+                    <img src="img/tag5.png" alt="tag">
+                </div>
+                <p>Rich in energy, our drinks will revitalize your body and
+                   <br> get you ready for the day’s activities</p>
+                   <div class="btn">
+                    <button>Buy Now</button>
+                   </div>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="img/pepsi.png" alt="">
+            </div>
+            
+        </section>
+        <div class="bg-can">
+            <img class="group" src="img/Group 3.png" alt="">
+        </div>
+    </div>
+<script>
+    icon = document.querySelector(".icon"),
+
+    icon.onclick = function() {
+    navBar = document.querySelector(".navbars")
+    navBar.classList.toggle("active");
+};
+</script>    
+</body>
+</html>

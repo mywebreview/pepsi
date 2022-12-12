@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Inter', sans-serif;
+background: #070A4E;
+}
+.contain{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    background:#070A4E;
+    background: radial-gradient(circle at right top, rgba(228,228,228,1) -20%, rgba(7,10,78,1) 30%);
+    box-shadow: 0px 4px 50px #000000;
+    border-radius: 15px;
+}
+.nav .logo{
+    padding: 5px 50px;
+}
+.nav .logo img{
+    width: 160px;
+}
+.icon{
+    font-size: 30px;
+    color: #FFFFFF;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbars{
+    display: flex;
+}
+.navbars ul{
+    display: flex;
+    justify-content: end;
+    padding-left: 100px;
+}
+.nav ul li{
+    list-style: none;
+}
+.navbars ul li a{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding:10px;
+}
+.navbars ul li a:hover{
+    color: rgb(159, 200, 236);
+}
+.navbars button{
+    padding: 7px 25px;
+    margin:0 10px;
+    font-size: 10px;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbars button:hover{
+    background: #FFFFFF;
+    color: #070A4E;
+}
+/* hero area of the screen */
+.hero{
+    display: flex;
+    margin: 0px;
+    padding: 20px;
+}
+.hero-lft{
+     display: block;
+     padding-left: 30px;
+     margin-top: 0;
+}
+.hero .hero-social{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.hero .hero-social img{
+    width: 17px;
+}
+
+.hero .hero-text{
+    padding: 0 50px;
+}
+.hero .hero-text h1{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 38px;
+padding-bottom: 5px;
+color: #FFFFFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hero .hero-text p{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 100;
+font-size: 10px;
+line-height: 12px;
+color: #FFFFFF;
+}
+.hero .hero-tags{
+    padding-left: 50px;
+}
+.hero .hero-tags h3{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+padding-top: 20px;
+line-height: 19px;
+color: #FFFFFF;
+}
+.tags-img{
+    display: flex;
+    padding: 10px 0;
+}
+.tags-img img{
+    width: 110px;
+    padding-right: 20px;
+}
+.hero-tags p{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 100;
+font-size: 10px;
+line-height: 12px;
+color: #FFFFFF;
+}
+.hero .btn{
+    padding: 20px 0;
+}
+.hero button{
+    padding: 7px 25px;
+    font-size: 10px;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-img{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 100px;
+}
+.hero-img img{
+    width: 550px;
+}
+.bg-can{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.bg-can .group{
+    position: relative;
+    border-radius:0 0 10px 0;
+    width: 70px;
+}
+@media only screen and (max-width: 1050px) {
+    .contain{
+        overflow: scroll;
+    }
+   .nav.logo{
+    display: none;
+   }
+   .nav .logo img{
+    width: 120px;
+}
+   .navbars{
+    height: 300px;
+     position: absolute;
+     top: 85px;
+     right: 0;
+     left: 100%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     transition: 0.2s;
+     overflow: hidden; 
+    }
+    .navbars.active{
+        left: inherit;  
+    }
+    .navbars ul{
+    background: radial-gradient(circle at right top, rgb(228, 228, 228) -20%, rgba(7,10,78,1) 33%);
+    display: block;
+    width: fit-content;
+    text-align: right;
+    transition: 0.5s;
+    padding: 25px;
+   }
+   .navbars ul li{
+    padding: 10px;
+   }
+   .navbars ul li a{
+    font-size: 15px;
+    padding:10px;
+}
+.navbars button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+
+}
+   .icon{
+    display: block;
+    cursor: pointer;
+   }
+}
+.hero{
+    display: block;
+}
+.tags-img{
+    display: block;
+    padding: 10px 0;
+}
+.hero .hero-social{
+    display: none;
+}
+.hero-lft {
+    display: block;
+    padding: 3px;
+}
+.hero .hero-text {
+    padding: 0 50px;
+}
+.hero .hero-text h1 {
+    font-size: 30px;
+}
+.hero .hero-text p {
+    font-size: 12px;
+}
+.tags-img img {
+    width: 90px;
+    padding-right: 20px;
+}
+.hero-img{
+    position: absolute;
+    display: block;
+
+}
+.hero-img .pepsi{
+    width: 600px;
+    float: left;
+}
+
+@media only screen and (max-width: 525px) {
+    
+    .tags-img{
+        display: block;
+        padding: 10px 0;
+    }
+    .hero .hero-social{
+        display: none;
+    }
+    .hero-lft {
+        display: block;
+        padding: 3px;
+    }
+    .hero .hero-text {
+        padding: 0 50px;
+    }
+    .hero .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero .hero-text p {
+        font-size: 10px;
+    }
+    .tags-img img {
+        width: 90px;
+        padding-right: 20px;
+    }
+    .hero-img{
+        position: absolute;
+        top: auto;
+        right: 0;
+        margin-left: 100px;
+        display: block;
+    
+    }
+    .hero-img .pepsi{
+        width: 600px;
+        float: center;
+    }
+    .bg-can{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    .bg-can .group{
+        position: fixed;
+        right: 40px;
+        bottom: 91px;
+        border-radius: 0 0 10px 0;
+        width: 70px;
+    }
+}
